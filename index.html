@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Felipe Jofré Quevedo, Analista Programador y Constructor Civil. Apasionado por la Informática y el Desarrollo de páginas y aplicaciones Web. Chillán, Chile.">
+	<title>Felipe Jofré Quevedo - Analista Programador</title>
+
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<!--Importar mi CSS-->
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen,projection">
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+	<div class="container">
+		<div class="cuerpo z-depth-4">
+			<div class="container">
+
+				<div class="section">
+					<!-- Inicio Cabecera -->
+					<div class="row">
+						<div class="col s12 m12 l12 center-align">
+							<div class="img-perfil">
+								<img class="responsive-img circle" src="img/profile.jpg" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 m12 l12 center-align">
+							<div id="titulo">
+								<h1>Felipe Jofré Quevedo</h1>
+							</div>
+						</div>
+						<div class="col s12 m12 l12 center-align">
+							<div id="subtitulo">
+								<h2>- Analista Programador -</h2>
+							</div>
+						</div>
+					</div>
+					<!-- Fin Cabecera -->
+
+					<!-- Inicio Contenido -->
+					<div id="contenido" class="row"> <!-- Descripción -->
+						<div class="col s12 m12 l12 center-align">
+							<p>Constructor Civil titulado pero actualmente cursando la carrera de Analista Programador, último semestre, tengo habilidades analíticas, creativas y de organización. Apasionado por el Desarrollo Web tanto "back-end" como "front-end".</p>
+						</div>
+					</div> <!-- Fin Descripción -->
+
+					<div class="row navegacion"><!-- Lista de Enlaces -->
+						<div class="col s12 m12 l12 hide-on-med-and-down">
+							<nav class="nav-center white z-depth-0" role="navigation">
+								<div class="nav-wrapper">
+									<ul>
+										<li><a class="black-text" href="https://fjq.cl/">PORTADA</a></li>
+										<li><a class="black-text modal-trigger" href="#mcontacto">CONTACTO</a></li>
+										<li><a class="black-text" target="_blank" href="https://github.com/Felipejoq">GITHUB</a></li>
+										<li><a class="black-text" target="_blank" href="https://www.linkedin.com/in/felipe-jofr%C3%A9-quevedo-abb87014a/">LINKEDIN</a></li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+						<div class="col s12 m12 l12 center-align">
+							<div id="botonmenu" data-activates="mobile-demo" class="btn black z-depth-0 white-text button-collapse">
+								Menú
+							</div>
+							<div class="side-nav" id="mobile-demo">
+								<ul>
+									<li><a class="black-text" href="#">PORTADA</a></li>
+									<li><a class="black-text modal-trigger" href="#mcontacto">CONTACTO</a></li>
+									<li><a class="black-text" target="_blank" href="#">GITHUB</a></li>
+									<li><a class="black-text" target="_blank" href="#">LINKEDIN</a></li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- Fin Lista de Enlaces -->
+				</div>
+				<!-- Fin Contenido -->
+
+				<!-- Pie de página -->
+				<footer>
+					<div class="row">
+						<div class="col s12 m12 l12 center-align">
+							<div id="piepagina">
+								<p class="pie">REGIÓN DEL BIOBIO, PROVINCIA DE ÑUBLE, CIUDAD DE CHILLÁN, COMUNA DE EL CARMEN.</p>
+								<p class="creditos">Felipe Jofré Quevedo &copy 2018 Todos los derechos reservados.</p>
+							</div>
+						</div>
+					</div>
+				</footer>
+				<!-- Fin Pie de página -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Structure -->
+	<script type="text/javascript">
+		var primero = "felipejofre";
+		var segundo = "fjq.cl";
+	</script>
+
+	<div id="mcontacto" class="modal modal-fixed-footer">
+		<form class="form" id="fc">
+			<div class="modal-content">
+				<div class="row">
+					<div class="col s12 m12 l12 center-align">
+						<i class="large material-icons">email</i>
+					</div>
+					<div class="col s12 m12 l12 center-align">
+						<h4>Envíame un correo</h4>
+						<p class="center-align">Para contactarme puede escribirme al correo:
+							<script type="text/javascript">
+								document.write('<a href="mailto:'+ primero + '@' + segundo +'">'+primero + '@' + segundo +'<\/a>');
+							</script>
+							<noscript>
+								Por favor active JavaScript en su navegador.
+							</noscript>
+						con gusto te responderé a la brevedad.</p>
+					</div>
+				</div>
+
+			</div>
+			<div id="piemodal" class="modal-footer">
+				<a class="modal-action modal-close waves-effect waves-green btn-flat black white-text right">Aceptar</a>
+			</div>
+		</form>
+	</div>
+
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.modal').modal();
+			$('.button-collapse').sideNav();
+		});
+	</script>
+</body>
+</html>
